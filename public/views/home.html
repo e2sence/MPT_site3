@@ -26,12 +26,30 @@
   <div class="mpt_page_header">
     <input type="radio" id="home" name="mpt_page_header" value="home" checked>
     <label for="home">Home</label><br>
-    <input type="radio" id="docs" name="mpt_page_header" value="docs">
+    <input type="radio" id="docs" name="mpt_page_header" value="docs" disabled>
     <label for="docs">Docs</label><br>
+    <input type="radio" id="app" name="mpt_page_header" value="app" disabled>
+    <label for="app">App</label><br>
   </div>
 
-  <div class="mpt_signin_plate"></div>
-  <div></div>
+  <div class="mpt_signin_plate">
+    <div class="mpt_signin_plate_cont">
+      <div class="mpt_signin_plate_header">Sign in</div>
+      <div class="mpt_signin_plate_logo"></div>
+      <div class="mpt_signin_plate_withword">with</div>
+      <div class="mpt_signin_buttons_cont">
+        <button class="mpt_signin_google_button mpt_signin_button">
+          Google<i class="mpt_signin_google_button_image"></i>
+        </button>
+        <button class="mpt_signin_telegram_button mpt_signin_button">
+          Telegram<i class="mpt_signin_telegram_button_image"></i></button>
+        <button class="mpt_signin_wallet_button mpt_signin_button">Wallet</button>
+      </div>
+      <div class="mpt_signin_plate_footer">hello</div>
+    </div>
+  </div>
+
+  <div class="mpt_page_footer"></div>
 
   <script src="home.js">
   </script>

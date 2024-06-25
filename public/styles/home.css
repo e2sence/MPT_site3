@@ -19,6 +19,7 @@ html {
     src: url('../JetBrainsMono-Regular.ttf');
 }
 
+/* ================================================= header */
 .mpt_page_header {
     position: absolute;
     display: flex;
@@ -43,12 +44,8 @@ html {
 }
 
 .mpt_page_header label {
-    /* position: relative; */
-    /* position: absolute; */
     margin-left: 6px;
     margin-right: 6px;
-    /* padding-left: 4px; */
-    /* padding-right: 4px; */
 }
 
 .mpt_page_header #home:checked {
@@ -57,9 +54,125 @@ html {
     }
 }
 
-
 .mpt_page_header #docs:checked {
     +label {
         border-bottom: 1.5px solid #494949;
     }
+}
+
+.mpt_page_header #app:checked {
+    +label {
+        border-bottom: 1.5px solid #494949;
+    }
+}
+
+.mpt_page_header input:disabled {
+    +label {
+        color: #c7c7c7;
+    }
+}
+
+/* ================================================= header */
+
+/* ================================================= signin plate */
+.mpt_signin_plate_cont {
+    position: absolute;
+    width: 160px;
+    height: auto;
+
+    background-color: #E9E9E9;
+    border: 1px solid #999999;
+    border-radius: 8px;
+
+    display: grid;
+    top: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-items: center;
+}
+
+.mpt_signin_plate_header {
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+.mpt_signin_plate_withword {
+    font-size: 18px;
+}
+
+.mpt_signin_plate_logo {
+    background-image: url(mainlogo_small-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 140px;
+    height: 50px;
+}
+
+.mpt_signin_buttons_cont {
+    display: grid;
+    margin-bottom: 8px;
+}
+
+.mpt_signin_button {
+    font-family: 'JetBrains Mono';
+    padding-left: 8px;
+    font-size: 18px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #999999;
+    border-radius: 16px;
+    width: 140px;
+    height: 40px;
+    margin: 4px;
+}
+
+.mpt_signin_button:hover {
+    background-color: #c7c7c7;
+    border: 1px solid #494949;
+}
+
+.mpt_signin_button:active {
+    background-color: white;
+    border: 1px solid #494949;
+}
+
+.mpt_signin_google_button_image {
+    position: absolute;
+    right: 20px;
+    background-image: url(google_logo-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+}
+
+.mpt_signin_telegram_button_image {
+    position: absolute;
+    right: 20px;
+    background-image: url(tg-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+}
+
+.mpt_signin_wallet_button {
+    text-align: center;
+    background-color: #03A7FF;
+    color: white;
+}
+
+.mpt_signin_wallet_button:hover {
+    background-color: #4cbdfa;
+}
+
+.mpt_signin_wallet_button:active {
+    text-align: center;
+    background-color: #03A7FF;
+    color: white;
+}
+
+.mpt_signin_plate_footer {
+    margin-bottom: 4px;
+    color: #c7c7c7;
 }

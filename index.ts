@@ -12,6 +12,7 @@ dotenv.config();
 const app: Express = express();
 
 app.use(express.static(path.join(__dirname, '/public/styles')))
+app.use(express.static(path.join(__dirname, '/public/images')))
 app.use(express.static(path.join(__dirname, '/dist')))
 app.use('/', home)
 
