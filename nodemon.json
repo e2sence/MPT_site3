@@ -1,0 +1,8 @@
+{
+    "watch": [
+        "//",
+        "routes"
+    ],
+    "ext": "ts",
+    "exec": "concurrently -p \"npx tsc --watch\" \"ts-node index.ts\" "
+}
