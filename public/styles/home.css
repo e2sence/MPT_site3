@@ -1,4 +1,65 @@
-.mpt {
-    color: aqua;
-    background-color: bisque;
+body,
+html {
+    font-family: 'JetBrains Mono';
+    font-size: 12px;
+    margin: 0%;
+    background-color: #E9E9E9;
+    display: flex;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../JetBrainsMono-Regular.ttf');
+}
+
+.mpt_page_header {
+    position: absolute;
+    display: flex;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: auto;
+
+    font-size: 18px;
+    color: #494949;
+
+    padding: 4px;
+
+    background-color: #E9E9E9;
+    border: 1px solid #999999;
+    border-radius: 8px;
+}
+
+.mpt_page_header input {
+    display: none;
+}
+
+.mpt_page_header label {
+    /* position: relative; */
+    /* position: absolute; */
+    margin-left: 6px;
+    margin-right: 6px;
+    /* padding-left: 4px; */
+    /* padding-right: 4px; */
+}
+
+.mpt_page_header #home:checked {
+    +label {
+        border-bottom: 1.5px solid #494949;
+    }
+}
+
+
+.mpt_page_header #docs:checked {
+    +label {
+        border-bottom: 1.5px solid #494949;
+    }
 }

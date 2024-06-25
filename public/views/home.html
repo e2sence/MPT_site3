@@ -7,9 +7,34 @@
 
 <body>
 
+  <!-- backgroud -->
+  <div class="container" style="position: absolute; width:100%; height:100%;">
+    <svg xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%">
+      <defs>
+        <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+          <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#BBBBBB" stroke-width="0.5" />
+        </pattern>
+        <pattern fill="#ffffff" id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+          <rect width="80" height="80" fill="url(#smallGrid)" />
+          <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#BBBBBB" stroke-width="1" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)" />
+    </svg>
+  </div>
 
+  <div class="mpt_page_header">
+    <input type="radio" id="home" name="mpt_page_header" value="home" checked>
+    <label for="home">Home</label><br>
+    <input type="radio" id="docs" name="mpt_page_header" value="docs">
+    <label for="docs">Docs</label><br>
+  </div>
 
-  <script src="home.js"></script>
+  <div class="mpt_signin_plate"></div>
+  <div></div>
+
+  <script src="home.js">
+  </script>
 </body>
 
 </html>
